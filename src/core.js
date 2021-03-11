@@ -139,4 +139,4 @@ var heatmapFactory = {
   }
 };
 
-return heatmapFactory;
+export default heatmapFactory;

@@ -4,7 +4,7 @@
  * Copyright 2008-2016 Patrick Wied <heatmapjs@patrick-wied.at> - All rights reserved.
  * Dual licensed under MIT and Beerware license 
  *
- * :: 2016-09-05 01:16
+ * :: 2021-03-11 14:15
  */
 ;(function (name, context, factory) {
 
@@ -348,7 +348,7 @@ var Canvas2dRenderer = (function Canvas2dRendererClosure() {
 
     canvas.style.cssText = shadowCanvas.style.cssText = 'position:absolute;left:0;top:0;';
 
-    container.style.position = 'relative';
+    container.style.position = 'absolute';
     container.appendChild(canvas);
 
     this._palette = _getColorPalette(config);
@@ -718,7 +718,7 @@ var heatmapFactory = {
   }
 };
 
-return heatmapFactory;
+export default heatmapFactory;
 
 
 });
